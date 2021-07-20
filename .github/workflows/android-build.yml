@@ -60,6 +60,7 @@ jobs:
         echo "Let's rerun the activation"
         source setup/activate_native.sh
         echo $PATH
+        export ORG_GRADLE_PROJECT_cdvBuildToolsVersion=30.0.3
         which gradle
         gradle --version
         npx cordova build android
