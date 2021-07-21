@@ -55,7 +55,7 @@ jobs:
       shell: bash -l {0}
       run: |
         SDKMANAGER=$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager
-        echo y | $SDKMANAGER uninstall "build-tools;31.0.0"
+        echo y | $SDKMANAGER --uninstall "build-tools;31.0.0"
         echo $PATH
         which gradle
         gradle -version
